@@ -23,11 +23,13 @@ header h1 {
 
 nav {
   background-color: var(--color2);
-  padding: 5px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   width: 100%;
 }
 
 nav ul {
+  margin: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -37,53 +39,145 @@ nav ul {
 nav a {
   text-decoration: none;
   color: white;
-  font-size: 1em;
+  font-size: 1.2em;
+  font-family: monospace;
 }
 
 .currentPage a {
-  font-weight: bold;
+  font-weight: bolder;
   color: rgb(180, 232, 249);
 }
 
 .title {
+    border-bottom: solid 2px black;
+  padding-top: 1%;
+  padding-bottom: 2.5%;
+  padding-left: 2%;
   h2 {
     font-size: 1em;
+    font-family: monospace;
   }
   p {
-    font-size: 1em;
+      font-size: .85em;
   }
 }
 
 .homeContent {
+  padding-top: 1%;
+  padding-bottom: 10%;
+  padding-left: 2%;
   h2 {
     font-size: 1em;
+    font-family: monospace;
   }
   p {
-    font-size: 1em;
-    marg
+    font-size: .85em;
   }
 }
+
+#paragraphs {
+  padding-top: 1%;
+  padding-bottom: 10%;
+  padding-left: 2%;
+}
+
+#paragraphs h3 {
+  font-family: monospace;
+  font-size: 1.2em;
+  padding-left: 20%;
+}
+
+#paragraphItem1, #paragraphItem2{
+  display: flex;
+  justify-content: center;
+}
+#paragraphItem2 {
+  flex-direction: row-reverse;
+}
+
+#paragraphs p {
+  font-size: .85em;
+  max-width: 40%;
+}
+
+#paragraphItem1 p {
+  padding-right: 2%;
+}
+
+#paragraphItem2 p {
+  padding-left: 2%;
+}
+
 
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-top: 1%;
+  padding-bottom: 10%;
+  padding-left: 2%;
 
   h3 {
-    font-size: 1.7em;
+    font-size: 1em;
   }
   p {
-    font-size: 1.3em;
+    font-size: .8em;
   }
 }
+#resume {
+  display: flex;
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 10%;
+  padding-left: 2%;
+}
+
+#resume img {
+  max-height: 70%;
+  max-width: 80%;
+}
+
+#contactInfo {
+  padding-top: 1%;
+  padding-bottom: 10%;
+  padding-left: 2%;
+}
+
+#contactInfo h3 {
+  font-family: monospace;
+  font-size: 1.2em;
+}
+
+#contactInfo p {
+  font-size: .8em;
+}
+
+.contactForm ul{
+  list-style: none;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactForm ul input {
+  padding: 4px;
+  margin-bottom: 10px;
+  min-width: 80%;
+
+}
+
 
 footer {
     background-color: black;
-    padding: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     width: 100%;
     min-height: 100%;
 }
 
 footer ul {
+  margin: 0;
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -104,6 +198,7 @@ footer img {
 footer p {
     color: white;
     font-size: .9em;
+    font-family: monospace;
     align-items: center;
     padding-right: 10px;
 }
