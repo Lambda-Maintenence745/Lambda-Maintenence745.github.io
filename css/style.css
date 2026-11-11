@@ -1,0 +1,109 @@
+:root {
+  --color1: dodgerblue;
+  --color2: rgb(20, 20, 20);
+}
+
+body {
+  margin: 0;
+}
+header {
+  background-color: var(--color1);
+  margin: 0;
+  width: 100%;
+  padding-bottom: 1px;
+  padding-top: 1px;
+}
+header h1 {
+  color: white;
+  font-size: 4em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  background-color: var(--color2);
+  padding: 5px;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+}
+
+.currentPage a {
+  font-weight: bold;
+  color: rgb(180, 232, 249);
+}
+
+.title {
+  h2 {
+    font-size: 1em;
+  }
+  p {
+    font-size: 1em;
+  }
+}
+
+.homeContent {
+  h2 {
+    font-size: 1em;
+  }
+  p {
+    font-size: 1em;
+    marg
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  h3 {
+    font-size: 1.7em;
+  }
+  p {
+    font-size: 1.3em;
+  }
+}
+
+footer {
+    background-color: black;
+    padding: 5px;
+    width: 100%;
+    min-height: 100%;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+footer li {
+    display: flex;
+    align-items: center;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    padding-right: 5px;
+}
+
+footer p {
+    color: white;
+    font-size: .9em;
+    align-items: center;
+    padding-right: 10px;
+}
